@@ -1,6 +1,6 @@
 import React from 'react';
 
-const History = ({ history, moveTo, currentmove }) => {
+const History = ({ history, moveTo, currentMove }) => {
   return (
     <ul>
       {history.map((_, move) => {
@@ -8,7 +8,7 @@ const History = ({ history, moveTo, currentmove }) => {
           <li key={move}>
             <button
               style={{
-                fontWeight: move === currentmove ? 'bold' : 'normal',
+                fontWeight: move === currentMove ? 'bold' : 'normal',
               }}
               type="button"
               onClick={() => {
